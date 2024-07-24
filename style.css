@@ -1,0 +1,142 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+    text-align: center;
+}
+
+.welcome-outer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.welcome {
+    display: none;
+}
+
+h1 {
+    color: white;
+    font-size: 60px;
+    margin-top: 83px;
+  margin-bottom: 31px;
+}
+
+span {
+    color: rgb(168, 85, 251);
+    text-decoration: underline;
+}
+
+p {
+    margin-bottom: 2rem;
+    color: rgb(119, 247, 112);
+    font-size: 20px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+h3 {
+    color: rgb(51, 250, 61);
+    margin: 2.5rem;
+    letter-spacing: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container {
+    height: 50vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ttt-game {
+    height: 59vmin;
+    width: 59vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(236, 253, 138);
+    gap: 1vmin;
+    border-radius: 16px;
+    margin-bottom: 20px;
+}
+
+.box {
+    height: 19vmin;
+    width: 19vmin;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 9vmin;
+    border-radius: 8px;
+}
+
+.reset-b, .new-b {
+    padding: 1rem;
+    font-size: 1.25rem;
+    border-radius: 22px;
+    color: white;
+    background-color: rgb(168, 85, 251);
+    border: none;
+    outline: none;
+}
+
+.reset-b:active, .new-b:active {
+    transform: scale(0.9);
+}
+
+.player-inputs {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.player-inputs input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin: 0.5rem;
+    border: none;
+    outline: none;
+}
+
+#start-game {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    background-color: rgb(168, 85, 251);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 630px) {
+    h1 {
+        font-size: 35px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+@media (min-width: 700px) {
+    .ttt-game {
+        height: 38vmin;
+        width: 38vmin;
+    }
+
+    .box {
+        height: 12vmin;
+        width: 12vmin;
+    }
+}

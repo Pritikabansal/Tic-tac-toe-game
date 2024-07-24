@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe-Game : 2 players game [ X O ]</title>
+    <meta name="description"
+        content="Tic Tac Toe is a classic two-player game, also known as Noughts and Crosses. It is played on a 3x3 grid where each player takes turns marking a cell in the grid with their symbol—one player uses 'X' and the other uses 'O'. The objective is to be the first player to get three of their symbols in a row, either horizontally, vertically, or diagonally.">
+    <meta name="keywords" content="game, player,Tic-Tac-Toe-Game,x,o">
+    <link rel="shortcut icon" type="x-icon" href="ttt.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="welcome">
+        <div class="welcome-outer">
+            <p>Welcome !!</p>
+            <button class="new-b">New Game</button>
+        </div>
+    </div>
+
+    <div class="mainbox">
+        <h1>Tic-Tac-Toe- <span>Game</span></h1>
+        <div class="player-inputs">
+            <input type="text" id="player1" placeholder="Enter Player 1 Name">
+            <input type="text" id="player2" placeholder="Enter Player 2 Name">
+            <button id="start-game">Start Game</button>
+        </div>
+        <h3 id="turn-indicator"></h3>
+        <div class="container">
+            <div class="ttt-game">
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+                <button class="box"></button>
+            </div>
+            <button class="reset-b">Reset Game</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
